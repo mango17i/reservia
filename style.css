@@ -4,316 +4,39 @@
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
-<<<<<<< HEAD
 }
 body{
-=======
-}
-    header{
-        background-color: rgb(3, 3, 3);
-        line-height: 2em;
-        margin: 0 15px
-        
-    }
-        .topbar_logo{
-            background-color: rgb(165, 104, 55);
-            float: left;
-            text-align: left;
-        }
-            .topbar_logo:hover{
-            border-bottom: 10px solid blue;
-            }
-            .topbar_logo:active{
-            border-bottom: 10px solid rgb(90, 90, 92);
-            }
-        .inscription{
-            background-color: bisque;
-            float: right;
-            margin-top: 10px;
-            color: blue;
-            text-align: right;
-            padding-top: 30px;
-        }
-            .inscription:hover{
-                color:rgb(243, 239, 239);
-            }
-            .inscription:focus{
-                color:red
-            }
-        .topbar_menu{
-            width: 100%;
-            background-color: brown;
-            display: flex;
-            justify-content: space-around;
-        }
-        .topbar_selection{
-            width: 50%;
-            border-bottom: 5px solid rgb(233, 212, 26);
-            text-align: center;
-            padding-top: 80px;
-            }
-            .topbar_selection:hover{
-                border-bottom: 5px solid blue;
-            }
-@media screen and (min-width: 700px) {
-    header{
-        display: flex;
-        align-items: stretch;
-        flex-wrap: nowrap;
-        margin: 0 15px;
-    }
-        .topbar_logo{
-            width: 50%;
-            flex: 6;
-        }
-        .inscription{
-            order: 3;
-            width: 10%;
-            flex: 1;
-            margin: 0;
-        }
-        .topbar_menu{
-            flex: 3;
-            
-        }
-        .topbar_selection
-        {
-            width: 20%;
-            text-align: right;
-            border-bottom: 0;
-            background-color: blueviolet;
-            width: 50%;
-            text-align: center;
-        }
-            .topbar_selection:hover{
-                border-top: 5px solid blue;
-                border-bottom: 0;
-            }
-}
-nav{
-    background-color: aquamarine;
-    margin: 0 15px;
-}
-    .description{
-        background-color: beige;
-        padding: 20px 0;
-    }
-    .searchbar{
-        background-color: rgb(110, 27, 189);
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-        .searchbar input{
-            border-color: rgb(212, 212, 212);
-            border-width: 1px 0 1px 0;
-            padding: 0%;
-            width: 140px;
-            text-align: left;
-        }
-        .fa-map{
-            min-width: 20px;
-            border-radius: 12px 0 0 12px;
-            background-color: rgb(212, 212, 212);
-            font-size: 1em;
-            text-decoration: none;
-            padding: 9px
-        }
-        .fa-map::before{
-            display: none;
-        }
-        ::placeholder{
-            color: rgb(7, 7, 7);
-            font-weight: bold;
-            font-size: 1.1em;
-            text-align: center;
-        }
-        .button{
-            width: auto;
-            background-color: blue;
-            color: white;
-            border-style: none;
-            border-radius: 0px 12px 12px 0px;
-        }
-    .filter{
-        background-color: rgb(189, 28, 42);
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-        .title_list{
-            width: 20%;
-            margin: 10px 0;
-        }
-        .list_filter{
-            display: flex;
-            flex-wrap: wrap;
-            background-color: rgb(212, 212, 212);
-            width: 80%;
-            list-style-type: none;
-        }
-        .filter li{
-            display: flex;
-            flex-flow: row nowrap;
-            background-color: brown;
-            justify-content: space-between;
-            margin: 10px 5px;
-        }
-        .item
-        {
-            border-radius: 30px;
-            padding: 0;
-            border: 1px solid rgb(212, 212, 212);
-            border-width: 3px 3px 3px 0;
-            background-color: white;
-            display: flex;
-            align-items: center;
-        }
-            .fa-item
-            {
-                background-color: rgb(196, 238, 255);
-                border-radius: 50%;
-                color: blue ;
-                text-align: center;
-                height: 30px;
-                width: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .item_filter{
-                padding: 0 10px
-            }.item:focus
-            {
-            background-color: rgb(212, 212, 212) ;
-            }
-                
-    .information{
-        background-color:rgb(3, 3, 3);
-            display: flex;
-            flex-direction: row;
-
-        }
-        .info
-            {
-                display: flex;
-                font-size: 0.7em;
-                padding-left: 5px;
-        }
-        .info-circle
-        {
-            display: flex;
-            justify-content: flex-start;
-            align-items: stretch;
-            padding: 0;
-        } 
-            .logo_circle
-            {
-                color: blue;
-                background-color: rgb(244, 244, 252);
-                border: 2px solid rgb(212, 212, 212);
-                border-radius: 50%;
-                height: 15px;
-                width: 15px;
-                font-size: 0.6em;
-            }  
-@media screen and (min-width: 400px) {
-    .searchbar{
-        background-color: rgb(110, 27, 189);
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-        .searchbar input{
-            border-color: rgb(212, 212, 212);
-            border-width: 1px 0 1px 0;
-            padding: 0%;
-            width: 240px;
-            text-align: left;
-        }
-        .fa-map{
-            width: 40px;
-            border-radius: 10px 0 0 10px;
-            background-color: rgb(212, 212, 212);
-            font-size: 1em;
-            text-decoration: none;
-            padding: 9px
-        }
-        .fa-map::before{
-            display: none;
-        }
-        ::placeholder{
-            color: rgb(7, 7, 7);
-            font-weight: bold;
-            font-size: 1.4em;
-            text-align: center;
-        }
-        .button{
-            width: auto;
-            background-color: rgb(49, 49, 207);
-            color: white;
-            border-style: none;
-            border-radius: 0px 10px 10px 0px;
-        }
-    }
-.main{
-    margin: 40px 15px;
-}
-.fa_icon{
-    font-size: 0.9em;
-    padding-top: 10px;
-}
-aside{
-    background-color: aqua;
-}
-.popular_title{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-.popular_picture{
-    width: 40%;
-}
-.popular_picture img{
-    max-width: 2215px;
-    width: 100%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-    overflow: hidden;
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
-<<<<<<< HEAD
     .container{
     max-width: 1400px;
     }
         header{
-        line-height: 3em;
+        line-height: 3rem;
         }
             .topbar_logo{
-                padding: 20px 0 0 20px;
+                padding: 27px 0 0 30px;
                 float: left;
                 text-align: left;
             }
             .inscription{
                 font-weight: 700;
-                padding: 20px 20px 0 0;
+                padding: 30px 30px 0 0;
                 float: right;
                 color:#0065FC;
                 text-align: right;
             }
                 .inscription:link{
                     font-weight: 700;
+                    padding-left: 20px;
                     color: #0065FC;
                 }
                 .inscription:hover{
                     font-weight: 900;
-                    font-size: 1.1em;
+                    font-size: 1.1rem;
                     text-shadow: 5px 5px 5px #f2f2f2;
                     color: #0065FC;
                 }
@@ -358,7 +81,6 @@ aside{
                     }   
                         @media screen and (min-width: 700px) {
                                 header{
-                                    margin: 0 15px;
                                     display: flex;
                                     align-items: stretch;
                                     flex-wrap: nowrap;
@@ -378,7 +100,7 @@ aside{
                                     }
                                         .topbar_selection
                                         {
-                                            padding-top: 20px;
+                                            padding: 33px 50px;
                                             width: 30%;                                          
                                             border-bottom: 0;
                                             width: 50%;
@@ -390,11 +112,11 @@ aside{
                                             }
                         }
         nav{
-            margin: 20px;
+            margin: 20px 30px;
         }
             .description{
                 padding: 20px 0;
-                line-height: 2em;
+                line-height: 2rem;
             }
             .searchbar{
                 width: auto;
@@ -422,7 +144,7 @@ aside{
                 }
                         ::placeholder{
                             color: rgb(7, 7, 7);
-                            font-size: 1.1em;
+                            font-size: 0.9rem;
                             font-weight: bold;
                             text-align: center;
                         }
@@ -461,11 +183,11 @@ aside{
                                 .searchbar input{
                                     width: 230px;
                                     height: 50px;
-                                    text-align: left;
                                 }
                                     ::placeholder{
                                         color: rgb(7, 7, 7);
-                                        font-size: 1.4em;
+                                        font-size: 1rem;
+                                        padding-right: 40px;
                                         font-weight: bold;
                                         text-align: center;
                                     }
@@ -480,7 +202,7 @@ aside{
                                         display: none;
                                     }
                                     .click_search{
-                                        font-weight: 500;
+                                        font-weight: 600;
                                         display: block;
                                     }
                             }
@@ -534,14 +256,17 @@ aside{
                             padding-right: 20px;
                             
                         }
+                            .list_filter button:link{
+                                box-shadow: 1px 1px rgb(190, 190, 190);
+                            }
                             .list_filter button:hover{
                                 background-color:#f2f2f2;
-                                box-shadow: 2px 2px #f2f2f2, 2px 2px #f2f2f2;
+                                box-shadow: 1px 1px #f2f2f2, -1px -1px #f2f2f2;
                             }
                             .list_filter button:focus
                             {
                             background-color: #f2f2f2;
-                            box-shadow: 2px 2px #f2f2f2, -2px -2px #f2f2f2;
+                            box-shadow: 1px 1px #f2f2f2, -1px -1px #f2f2f2;
                             }      
             .information{
                 display: flex;
@@ -556,7 +281,7 @@ aside{
                 } 
                         .logo_circle
                         {
-                            font-size: 0.7em;
+                            font-size: 0.7rem;
                             border-radius: 50%;
                             height: 15px;
                             width: 15px;
@@ -565,7 +290,7 @@ aside{
                             color: blue;
                         }  
                     .info{
-                        font-size: 0.9em;
+                        font-size: 0.9rem;
                         padding-left: 8px;
                         display: flex;
                         }
@@ -592,7 +317,7 @@ aside{
                         background-color: white;
                         max-width: 3005px;
                         max-height: 130px;
-                        box-shadow: 2px 2px rgb(190, 190, 190), -2px -2px rgb(190, 190, 190);
+                        box-shadow: 1px 1px rgb(190, 190, 190), -1px -1px rgb(190, 190, 190);
                     }
                         .popular_picture{
                             width: 40%;
@@ -614,10 +339,10 @@ aside{
                                 max-width: 180px;
                                 overflow: hidden;
                                 padding: 10px 20px;
-                                font-size: 0.8em;
+                                font-size: 0.8rem;
                             }
                             .fa_icon{
-                                font-size: 0.9em;
+                                font-size: 0.9rem;
                                 padding: 10px 0;
                                 display: flex;  
                                 justify-content: flex-start;
@@ -625,7 +350,7 @@ aside{
                             }
                                 .icon_empty{
                                     color: #f2f2f2;
-                                    font-size: 1em;
+                                    font-size: 1rem;
                                     padding-left: 3px;
                                     text-shadow: 1px 1px 1px  rgb(190, 190, 190);
                                 }
@@ -679,7 +404,7 @@ aside{
                     margin: 10px 0;
                     border-radius: 22px;
                     padding: 3px;
-                    box-shadow: 3px 3px #f2f2f2, -3px -3px #f2f2f2;
+                    box-shadow: 1px 1px #f2f2f2, -1px -1px #f2f2f2;
                     display: flex;
                     background-color: white;
                     flex-wrap: wrap;
@@ -700,11 +425,11 @@ aside{
                         max-height: 135px;
                         overflow: hidden;
                         padding: 5px 20px;
-                        font-size: 0.9em;
+                        font-size: 0.9rem;
                     }
                     .more{
                         padding: 20px;
-                        font-size: 0.9em;
+                        font-size: 0.9rem;
                         font-weight: 900;
                     }
 @media screen and (min-width: 980px) {
@@ -735,7 +460,7 @@ aside{
                     height: 135px;
                 }
                 .popular_description{
-                    font-size: 0.8em;
+                    font-size: 0.8rem;
                 }
         article{
             width: 66%;
@@ -766,7 +491,7 @@ aside{
 .accomodation_description{
     height: auto;
     padding: 15px 0px 15px 20px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 .more{
     padding: 30px 20px 0 20px;
@@ -794,7 +519,7 @@ aside{
     background-color: white;
     border-radius: 22px;
     text-align:  left;
-    box-shadow: 2px 2px #f2f2f2, -2px -2px #f2f2f2;
+    box-shadow: 1px 1px #f2f2f2, -1px -1px #f2f2f2;
 
 }
 
@@ -811,9 +536,10 @@ aside{
     border-radius: 20px 20px 0 0;
 }
 .activities_title{
-    padding: 25px 0 25px 20px;
-    font-size: 0.8em;
+    padding: 15px 10px 10px 20px;
+    font-size: 0.8rem;
     font-weight: 700;
+    line-height: 2rem;
 }
 .vieux_port
 {
@@ -831,215 +557,6 @@ aside{
 {
     grid-area: frioul;
 }
-=======
-.card{
-    display: flex;
-    margin: 10px 0;
-    border-radius: 22px;
-    padding: 3px;
-    background-color: brown;
-    max-width: 3005px;
-    max-height: 130px;
-}
-.popular_description{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 135px;
-    overflow: hidden;
-    padding: 10px 20px;
-    font-size: 0.8em;
-}
-._popular{
-    display: flex;
-    justify-content: center;
-}
-@media screen and (min-width: 650px) { 
-    .popular_article{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .card{
-        max-width: 300px;
-        max-height: 95px;
-    }
-    .popular_picture img{
-        width: 100%;
-        height: 100%;
-    }
-    ._popular{
-        padding: 5px 5px 0 0;
-    }
-}
-
-article{
-    display: flex;
-    flex-direction: column;
-}
-.accomodation_picture img{
-    max-width: 655px;
-    width: 100%;
-    height: 105px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-    display: flex;
-}
-.accomodation{
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 180px;
-    margin: 10px 0;
-    border-radius: 22px;
-    padding: 3px;
-    background-color: brown;
-}
-.accomodation_description{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 135px;
-    overflow: hidden;
-    padding: 5px 20px;
-    font-size: 0.9em;
-}
-.serie{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-@media screen and (min-width: 650px) { 
-    .accomodation{
-        padding: 3px;
-        margin: 15px 2px 15px 0;
-        width: 655px;
-    }
-    .accomodation_ti
-}
-@media screen and (min-width: 980px) {
-    .serie{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .main 
-    {
-        display: flex;
-        flex-flow: nowrap row-reverse;
-    }
-    aside{
-        width: 33%;
-    }
-    article{
-        width: 66%;
-        margin-right: 20px;
-    }
-    .accomodation_picture img{
-        width: 100%;
-        height: 115px;
-        display: flex;
-    }
-    .serie{
-    flex-wrap: nowrap;
-    padding-top: 15px;
-    justify-content: space-between;
-}
-.accomodation{
-    width: 33%;
-    max-height: 200px;
-    max-width: 500px;
-    margin: 10px 5px;
-}
-.accomodation_description{
-    height: auto;
-    padding: 15px 0px 15px 20px;
-    font-size: 0.8em;
-}
-
-.more{
-    background-color: blue;
-    padding-top: 15px;
-}
-.popular_title{
-    padding: 0 0 10px 0;
-}
-.popular_picture img{
-    width: 125px;
-    height: 135px;
-}
-.card{
-    display: flex;
-    margin: 10px 0;
-    border-radius: 22px;
-    padding: 3px;
-    background-color: brown;
-    max-width: 345px;
-    max-height: 150px;
-}
-.popular_description{
-    font-size: 0.8em;
-}
-}
-.branch
-{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(247, 183, 105);
-    margin: 0 15px;
-}
-.activities_section
-{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-    "vieux_port pomegue calanques notre_dame"
-    "vieux_port frioul calanques longchamp";
-    background-color: black;
-}
-.activities{
-    margin: 10px 20px 20px 0;
-    background-color: aquamarine;
-    border-radius: 22px;
-    text-align:  left;
-}
-
-.activities_picture img{
-    object-fit: cover;
-    background-color: blue;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 155px;
-}
-.big img{
-    object-fit: cover;
-    height: 390px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-}
-.activities_title{
-    padding: 25px 0 25px 20px;
-    font-size: 0.8em;
-}
-.vieux_port
-{
-    background-color: blueviolet;
-    grid-area: vieux_port;
-    height: auto;
-} 
-.pomegues
-{
-    background-color: antiquewhite;
-    grid-area: pomegue;
-    height: auto;
-}
-.frioul
-{
-    background-color: brown;
-    grid-area: frioul;
-}
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129
 .calanques
 {
     grid-area: calanques;
@@ -1064,17 +581,10 @@ article{
     ". ."
     "calanques notre_dame"
     "calanques longchamp";
-<<<<<<< HEAD
-    
 }
 .activities_title{
     padding: 0 0 20px 20px;
-=======
-    background-color: black;
-}
-.activities_title{
-    padding: 15px 0 30px 20px;
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129
+
 }
 }
 @media screen and (max-width: 649px) {
@@ -1089,18 +599,9 @@ article{
         ". ."
         "calanques calanques"
         "notre_dame longchamp";
-<<<<<<< HEAD
-=======
-        background-color: black;
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129
     }
-    
     .activities_picture img{
         object-fit: cover;
-<<<<<<< HEAD
-=======
-        background-color: blue;
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129
         border-radius: 20px 20px 0 0;
         width: 100%;
         height: 285px;
@@ -1125,7 +626,6 @@ article{
 .big img {
     height: 120px;
 }
-<<<<<<< HEAD
 .activities_title{
     padding: 0 0 20px 30px ;
 }
@@ -1135,7 +635,7 @@ article{
 }
 footer{
     padding:  30px 20px 20px 40px;
-    line-height: 3em;
+    line-height: 3rem;
     background-color: #f2f2f2;
 }
     .footer_bar{
@@ -1147,7 +647,7 @@ footer{
         }
             footer li{
                 list-style-type: none;
-                line-height: 1.5em;
+                line-height: 1.5rem;
             }
                 li a{
                     color: black;
@@ -1161,40 +661,3 @@ footer{
                             width: 33%;
                         }
                     }
-=======
-.activities_picture img{
-        height: 120px;
-    }
-    .activities_title{
-        padding: 15px 0 20px 30px ;
-    }
-}
-footer{
-    padding:0;
-    margin:  15px;
-    background-color: blueviolet;
-    line-height: 3em;
-}
-footer ul{
-    padding: 0;
-    margin:0;
-}
-footer li{
-    list-style-type: none;
-    line-height: 1.5em;
-}
-.footer_bar{
-padding-bottom: 30px;
-background-color: aquamarine;
-
-}
-@media screen and (min-width:650px) {
-    footer{
-        display:flex;
-        flex-flow: row wrap;
-    }
-    .footer_bar{
-        width: 33%;
-    }
-}
->>>>>>> 49e30a93c8182c67d766a24d4be2b33f17939129

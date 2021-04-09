@@ -1,0 +1,20 @@
+.fa-map-marker-alt:before {
+  content: "\f3c5"; }
+
+.fa-money-bill-wave:before {
+  content: "\f53a"; }
+
+.fa-child:before {
+  content: "\f1ae"; }
+
+.fa-heart:before {
+  content: "\f004"; }
+
+.fa-dog:before {
+  content: "\f6d3"; }
+
+.fa-info-circle:before {
+  content: "\f05a"; }
+
+.fa-star:before {
+  content: "\f005"; }

@@ -19,6 +19,7 @@ body{
     }
         header{
         line-height: 3rem;
+        background-color: aquamarine;
         }
             .topbar_logo{
                 padding: 27px 0 0 30px;

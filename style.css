@@ -1,49 +1,53 @@
 *{
+    margin: 0;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
     text-decoration: none;
 }
 a{
-    color: black;
     outline: none;
+    color: black;
 }
+em{
+    font-weight: 500;
+    font-style: italic;
+}
+/* <body> */
 body{
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
 }
-.container{
-    max-width: 1400px;
-    width: 100%;
-    overflow: hidden;
+    /* <div class="container"> */
+    .container{
+        width: 100%;
+        max-width: 1400px;
+        overflow: hidden;
     }
+        /* <header> */
         header{
-        line-height: 3rem;
+            line-height: 3em;
         }
             .topbar_logo{
                 padding: 27px 0 0 30px;
+                
                 float: left;
                 text-align: left;
             }
             .inscription{
-                font-weight: 700;
                 padding: 30px 35px 0 0;
+                font-weight: 700;
+                text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
                 float: right;
                 color:#0065FC;
                 text-align: right;
-                text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
             }
-                .inscription:link{
-                    font-weight: 700;
-                    padding-left: 20px;
-                    color: #0065FC;
-                }
+                
                 .inscription:hover{
                     font-weight: 900;
-                    text-shadow: 2px 2px 5px rgb(215, 215, 215);
+                    text-shadow: 0.1em 0.1em 0.3em rgb(215, 215, 215);
                     color: #0065FC;
                 }
                 .inscription:active{
@@ -61,9 +65,9 @@ body{
             }
                 .topbar_selection{
                     width: 50%;
-                    border-bottom: 3px solid #f2f2f2;
+                    text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                    border-bottom: 0.2em solid #f2f2f2;
                     text-align: center;
-                    text-shadow: 1px 1px 2px rgb(215, 215, 215);
                 }
                     .topbar_selection:link{
                         font-weight: 400;
@@ -75,869 +79,732 @@ body{
                     }
                     .topbar_selection:hover{
                         font-weight: 500;
+                        text-shadow: 0.1em 0.1em 0.3em rgb(215, 215, 215);
+                        border-bottom: #0065FC solid 0.1em;
                         color: #0065FC;
-                        text-shadow: 1px 1px 5px rgb(215, 215, 215);
-                        border-bottom: #0065FC solid 2px;
+                        transition: color .3s;
                         }
-                    .topbar_selection:active{
+                    .topbar_selection:focus{
                         font-weight: 400;
+                        border-bottom: #0065FC solid 0.3em;
                         color: #0065FC;
-                        border-bottom: #0065FC solid 5px;
-                    }   
-                        @media screen and (min-width: 765px) {
-                                header{
-                                    display: flex;
-                                    align-items: stretch;
-                                    flex-wrap: nowrap;
-                                }
-                                    .topbar_logo{
-                                        width: 40%;
-                                        flex: 6;
-                                    }
-                                    .inscription{
-                                        order: 3;
-                                        width: 10%;
-                                        flex: 1;
-                                        margin: 0;
-                                    }
-                                    .topbar_menu{
-                                        flex: 3;
-                                    }
-                                        .topbar_selection
-                                        {
-                                            padding: 33px 50px;
-                                            width: 30%;                                          
-                                            border-bottom: 0;
-                                            width: 50%;
-                                            text-align: center;
-                                        }
-                                            .topbar_selection:hover{
-                                                border-top: 3px solid blue;
-                                                border-bottom: 0;
-                                            }
-                        }
-                        em{
-                            font-weight: 500;
-                            font-style: italic;
-                        }
+                    }.topbar_selection:active{
+                        font-weight: 400;
+                        border-bottom: #0065FC solid 0.3em;
+                        color: #0065FC;
+                    }             
+        /* <nav> */
         nav{
-            margin: 20px 15px;
             padding: 10px 15px;
-            border-radius: 5px;
+            margin: 20px 15px;
+            border-radius: 0.3em;
         }
             .description{
                 padding: 10px 0 30px 0;
-                line-height: 2rem;
-                text-shadow: 1px 1px 2px rgb(215, 215, 215);
+                line-height: 2em;
+                text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
             }
             .searchbar{
-                display: flex;
                 width: auto;
-            }
-            .focus{
                 display: flex;
-                flex-wrap: nowrap;
-                border-radius: 17px;
-                background-color: #f2f2f2;
             }
-            .focus:hover{
-                box-shadow: 0 0 15px 2px rgb(215, 215, 215);
-            }
-                .fa-map{
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 17px 0 0 17px;
-                    padding: 10px 15px 17px 17px;
+                .focus{
+                    border-radius: 1em;
                     background-color: #f2f2f2;
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
+                    display: flex;
+                    flex-wrap: nowrap;
                 }
-                    .fa-map::before{
-                        display: none;
+                    .focus:hover{
+                        box-shadow: 0 0 2em 0.2em rgb(215, 215, 215);
                     }
-                .searchbar input{
-                    width: 200px;
-                    max-width: 300px;
-                    height: 45px;
-                    border: 0px;
-                    padding-left: 20px;
-                    border-bottom:#f2f2f2 solid 1px;
-                    border-top: #f2f2f2 solid 1px;
-                    text-align: right;
-                    outline: none;
-                    border-radius: 0 17px 17px 0;
-                    color: red;
-                }
-                        ::placeholder{
-                            color: black;
-                            font-size: 0.9rem;
-                            font-weight: 600;
-                            text-align: left;
-                            opacity: 0.8;
-                            text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
+                        .hidden {
+                            height: 1px;
+                            left: 0;
+                            overflow: hidden;
+                            position: absolute;
+                            top: -10000px;
+                            width: 1px;
                         }
-                        :-webkit-input-placeholder { /* Chrome, Safari, Opera */
-                            color: #1c87c9;
-                            }
-                            ::-ms-input-placeholder { /* Microsoft Edge */
-                            color: #1c87c9;
-                            }
-                    .push{
-                        margin: 0 0 0 -40px;
-                        border: 0px;
-                        border-radius:17px;
-                        height: 45px;
-                        width: 45px;
-                        background-color: #0065FC;
-                        color: white;
-                        text-shadow: 1.5px 1.5px 5px #f2f2f2;
+                        .fa-map{
+                            width: 45px;
+                            height: 45px;
+                            padding: 10px 15px 17px 17px;
+                            font-size: 1.5em;
+                            text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                            border-radius: 1em 0 0 1em;
+                            background-color: #f2f2f2;
                         }
-                        
-                        .fa-search{
-                            display: inline-block;
-                            list-style-type: none;
-                        }
-                            span.fa-search::before{
+                            .fa-map::before{
                                 display: none;
                             }
-                        .click_search{
+                        .searchbar input{
+                            width: 200px;
+                            max-width: 300px;
+                            height: 45px;
+                            padding-left: 20px;
+                            border: 0px;
+                            border-radius: 0 1em 1em 0;
+                            outline: none;
+                            color: rgb(0, 0, 0);
+                            border-top: #f2f2f2 solid 0.1em;
+                            border-bottom:#f2f2f2 solid 0.1em;
+                        }
+                            ::placeholder{
+                                font-size: 0.9em;
+                                font-weight: 600;
+                                opacity: 0.8;
+                                text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                                color: black;
+                                text-align: left;
+                            }
+                                :-webkit-input-placeholder { /* Chrome, Safari, Opera */
+                                    color: #000000;
+                                }
+                                ::-ms-input-placeholder { /* Microsoft Edge */
+                                color: #000000;
+                                }
+                                .invalid-feedback{
+                                    display: none;
+                                }
+                .push{
+                    width: 45px;
+                    height: 45px;
+                    margin: 0 0 0 -40px;
+                    border: 0px;
+                    border-radius:1em;
+                    text-shadow: 0.1em 0.1em 0.3em #f2f2f2;
+                    color: white;
+                    background-color: #0065FC;
+                }                                        
+                    .fa-search{
+                        list-style-type: none;
+                    }
+                        span.fa-search::before{
                             display: none;
-                            }
-                            .filter{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: flex-start;
-                                flex-wrap: wrap;
-                            }
-                        @media screen and (min-width: 575px) {
-                            .searchbar{
-                                display: flex;
-                                justify-content: flex-start;
-                                align-items: stretch;
-                            }
-                                .fa-map{
-                                    width: 50px;
-                                    height: 50px;
-                                    padding: 15px 15px 20px 20px;
-                                    border-radius: 17px 0 0 17px;
-                                }
-                                .searchbar input{
-                                    min-width: 380px;
-                                    height: 50px;
-                                    padding-right: 170px;
-                                }
-                                    ::placeholder{
-                                        color: rgb(7, 7, 7);
-                                        font-size: 0.95rem;
-                                        padding-right: 40px;
-                                        text-align: center;
-                                    }
-                                .push{
-                                    min-width: 135px;
-                                    min-height: 50px;
-                                    border-radius: 0px 17px 17px 0px;
-                                    background-color: #0065FC;
-                                    color: white;
-                                    margin-left: -136px ;
-                                }
-                                .click_search:hover{
-                                    font-weight: 300;
-                                }
-                                    .fa-search{
-                                        display: none;
-                                        text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                                    }
-                                    .click_search{
-                                        font-weight: 600;
-                                        display: block;
-                                        text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                                    }
-                            }
-            .filter{ 
+                        }
+                    .click_search{
+                        display: none;
+                    }
+            .filter{
                 padding: 30px 0;
-            }
-            .item {
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: column;
                 justify-content: flex-start;
-                align-items: center;
-                width: auto;
-                height: auto;
-                margin: 10px 20px;
-                padding: 0;
-                border-radius: 90px;
-                height: 40px;
-                border: 2px solid #f2f2f2;
-                text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                font-weight: 600;
-                opacity: 0.8;
+                flex-wrap: wrap;
             }
                 .title_list{
                     width: 5%;
-                    margin: 15px 0;
-                    text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
+                    text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                    font-weight: 700;
+                    padding-top: 21.5px;
                 }
                 .list_filter{
                     width: 80%;
+                    list-style-type: none;
                     display: flex;
                     flex-wrap: wrap;
-                    list-style-type: none;
                 }
-                    
-                    .list_filter .choose
-                    {
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: space-between;
-                        border-radius:  0 30px 30px 0;
-                        padding: 0 20px;
-                        align-items: center;
-                        background-color: white;
-                        min-height: 37px;
-                        text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                    }
-                        .fa-item
-                        {
-                            background-color: rgb(196, 238, 255);
-                            border-radius: 50%;
+                        .item{
                             height: 40px;
-                            width: 40px;
-                            padding: 20px;
-                            margin-right: -15px;
-                            color:#0065FC;
-                            text-align: center;
+                            padding: 0;
+                            margin: 10px 20px;
+                            font-weight: 600;
+                            opacity: 0.8;
+                            text-shadow: 0.1em 0.1em 0.1em #f2f2f2;
+                            box-shadow: 0 0 0.1em 0.2em #f2f2f2;
+                            border-radius: 6em;
+                            border: 0.1em solid #f2f2f2;
                             display: flex;
-                            font-size: 1rem;
+                            flex-direction: row-reverse;
+                            justify-content: flex-start;
                             align-items: center;
-                            justify-content: center;
-                            text-shadow: 1px 1px 2px rgb(215, 215, 215);
                         }
                             .list_filter .item:hover{
                                 background-color:#f2f2f2;
-                                box-shadow: 0 0 7px 1px rgb(215, 215, 215);
+                                box-shadow: 0 0 0.6em 0.2em rgb(215, 215, 215);
                             }
-                            .list_filter .choose:hover{
-                                background-color:#f2f2f2;
-                                text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-                            }         
+                                .list_filter .choose{
+                                    min-height: 37px;
+                                    height: 98%;
+                                    padding: 20px;
+                                    border-radius:  0 2em 2em 0;
+                                    background-color: white;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                    .list_filter .choose:hover{
+                                        background-color:#f2f2f2;
+                                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                                        padding: 0 20px;
+                                    } 
+                                .fa-item{
+                                    width: 40px;
+                                    height: 40px;
+                                    padding: 20px;
+                                    margin-right: -15px;
+                                    font-size: 1em;
+                                    border-radius: 50%;
+                                    background-color: rgb(196, 238, 255);
+                                    color:#0065FC;
+                                    text-align: center;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }                       
             .information{
                 display: flex;
                 flex-direction: row;
             }
-            .circle:hover{
-                font-weight: 500;
-                text-shadow: 2px 2px 5px rgb(215, 215, 215);
-                opacity: 1;
-            }
                 .info-circle{
                     border: 0px;
+                    background-color: white;
                     display: flex;
                     justify-content: flex-start;
                     align-items: stretch;
-                    background-color: white;
-                } 
-                        .logo_circle
-                        {
-                            font-size: 0.7rem;
+                }
+                    .logo_circle{
+                        width: 15px;
+                        height: 15px;
+                        padding: 8px;
+                        font-size: 0.7em;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        border-radius: 50%;
+                        border: 0.1em solid rgb(215, 215, 215);
+                        color: blue;
+                        background-color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .circle:hover{
+                            font-weight: 500;
+                            opacity: 1;
+                            text-shadow: 0.1em 0.1em 0.3em rgb(215, 215, 215);
+                        }
+                    .info{
+                        padding-top: 3px;
+                        padding-left: 8px;
+                        font-size: 0.9em;
+                        font-weight: 300;
+                        opacity: 0.6;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        display: flex;
+                    }
+        /* <section class="main"> */
+            /* aside */
+            aside{
+                box-shadow: 0 0.1em 0.3em 0.1em rgb(215, 215, 215), 0 -0.1em 0.3em 0.1em rgb(215, 215, 215);
+                background-color:#f2f2f2;
+            }
+                aside:hover{
+                    box-shadow: 0 0.1em 0.5em 0.3em rgb(215, 215, 215), 0 -0.1em 0.5em 0.3em rgb(215, 215, 215);  
+                }             
+                    .popular_title{
+                        padding: 20px;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                        .popular_housing{
+                            min-width: 100%;
+                            padding: 10px 20px;
                             display: flex;
                             justify-content: center;
-                            align-items: center;
-                            border-radius: 50%;
-                            height: 15px;
-                            width: 15px;
-                            padding: 8px;
-                            border: 2px solid rgb(215, 215, 215);
-                            background-color: white;
-                            color: blue;
-                            text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                        }  
-                    .info{
-                        font-weight: 300;
-                        font-size: 0.8rem;
-                        padding-left: 8px;
-                        padding-top: 3px;
-                        display: flex;
-                        text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                        opacity: 0.6;
-                    }   
-                                  
-        .section_title{
-            display: none;
-        }             
-            .popular_title{
-                padding: 20px 20px;
-                display: flex;
-                justify-content: space-between;
-                text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-                }
-                .popular_housing{
-                    display: flex;
-                    justify-content: center;
-                    padding: 10px 20px;
-                    min-width: 100%;
-                }
-                    .card{
-                        display: flex;
-                        min-width: 280px;
-                        width: 100%;
-                        height: 130px;
-                        border-radius: 22px;
-                        padding: 3px;
-                        background-color: white;
-                        max-height: 290px;
-                        box-shadow: 0 0 7px 1px rgb(215, 215, 215);
-                    }
-                    .card:hover{
-                        box-shadow: 0 0 15px 2px rgb(215, 215, 215);
-                    }                    
-                        .popular_picture{
-                            min-width: 37%;
-                            max-width: 38%;
-                            overflow: hidden;
                         }
-                            .popular_picture img{
-                                min-width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                                border-radius: 20px 0 0 20px;
-                                overflow: hidden;
+                            .card{
+                                min-width: 280px;
+                                width: 100%;
+                                height: 130px;
+                                max-height: 290px;
+                                padding: 3px;
+                                box-shadow: 0 0 0.6em 0.2em rgb(215, 215, 215);
+                                border-radius: 1.5em;
                                 display: flex;
+                                background-color: white;
                             }
-                            .popular_description{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                max-height: 135px;
-                                max-width: 58%;
-                                overflow: hidden;
-                                padding: 10px 0 10px 20px;
-                                font-size: 0.8rem;
-                                line-height: 1.8em;
-                                text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                            }
-                            .fa_icon{
-                                font-size: 0.9rem;
-                                display: flex;  
-                                justify-content: flex-start;
-                                color: #0065FC;
-                                padding: 2px
-                            }
-                            .icon_filled{
-                                color: #0065FC;
-                                font-size: 0.8rem;
-                                text-shadow: 1px 1px 2px rgb(200, 200, 200);
-                            }
-                                .icon_empty{
-                                    color: #f2f2f2;
-                                    font-size: 0.8rem;
-                                    padding-left: 3px;
-                                    text-shadow: 1px 1px 2px  rgb(200, 200, 200);
+                                .card:hover{
+                                    box-shadow: 0 0 1em 0.2em rgb(215, 215, 215);
+                                }                    
+                                    .popular_picture{
+                                        min-width: 37%;
+                                        max-width: 38%;
+                                        overflow: hidden;
+                                    }
+                                        .popular_picture img{
+                                            min-width: 100%;
+                                            height: 100%;
+                                            border-radius: 1.2em 0 0 1.2em;
+                                            display: flex;
+                                            object-fit: cover;
+                                            overflow: hidden;
+                                        }
+                                    .popular_description{
+                                        max-width: 58%;
+                                        max-height: 135px;
+                                        padding: 10px 0 10px 20px;
+                                        font-size: 0.8em;
+                                        line-height: 1.8em;
+                                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        overflow: hidden;
+                                    }
+                                        .fa_icon{
+                                            padding: 2px;
+                                            display: flex;  
+                                            justify-content: flex-start;
+                                        }
+                                            .icon_filled{
+                                                font-size: 0.8em;
+                                                text-shadow: 0.1em 0.1em 0.1em rgb(200, 200, 200);
+                                                color: #0065FC;
+                                            }
+                                            .icon_empty{
+                                                padding-left: 3px;
+                                                font-size: 0.8em;
+                                                text-shadow: 0.1em 0.1em 0.1em  rgb(200, 200, 200);
+                                                color: #f2f2f2;
+                                            }
+            /* <article id="accomodation"> */
+            article{
+                margin: 20px 0;
+                flex-direction: column;
+            }
+                article:hover{
+                    box-shadow: 0 0.1em 1em  rgb(215, 215, 215), 0 -0.1em 1em rgb(215, 215, 215);
+                    background-color: #f2f2f2;
+                }
+                    .accomodation_title{
+                        padding: 20px;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                    }
+                    .serie{
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    } 
+                        .accomodation{
+                            min-width: 100% ;
+                            min-height: 170px;
+                            padding: 3px;
+                            margin: 10px 0;
+                            box-shadow: 0 0 0.5em 0.2em #f2f2f2;
+                            border-radius: 1.4em;
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
+                            .accomodation:hover{
+                                box-shadow: 0 0 1em 0.2em rgb(215, 215, 215);
                                 }
-                                
-        article{
-            margin: 20px 0;
-            flex-direction: column;
-        }
-        article:hover{
-            box-shadow: 0 1px 8px rgb(215, 215, 215), 0 -1px 8px rgb(215, 215, 215);
-            background-color: #f2f2f2;
-        }
-        aside{
-            background-color:#f2f2f2;
-            box-shadow: 0 2px 5px rgb(215, 215, 215), 0 -2px 5px rgb(215, 215, 215);
-        }
-        aside:hover{
-        box-shadow: 0 2px 10px rgb(215, 215, 215), 0 -2px 10px rgb(215, 215, 215);  
-        }
-            .serie{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 20px;
-            } 
-                .accomodation_title{
-                    padding: 20px;
-                    text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-                }
-                .accomodation{
-                    min-height: 170px;
-                    min-width: 100% ;
-                    border-radius: 22px;
-                    padding: 3px;
-                    box-shadow: 0 0 7px 1px #f2f2f2;
-                    display: flex;
-                    background-color: white;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    margin: 10px 0;
-                }
-                .accomodation:hover{
-                    box-shadow: 0 0 15px 2px rgb(215, 215, 215);
-                    }
-                    .accomodation_picture img{
-                        max-width: 155px;
-                        min-width: 100%;
-                        height: 105px;
-                        object-fit: cover;
-                        border-radius: 20px 20px 0 0;
-                        overflow: hidden;
-                        display: flex;
-                    }
-                    .accomodation_description{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        height: 80px;
-                        overflow: hidden;
-                        padding: 10px 20px 0;
-                        font-size: 0.8rem;
-                        line-height: 1.5rem;
-                        text-shadow: 1px 1px 2px rgb(215, 215, 215);
-                    }
+                                    .accomodation_picture img{
+                                        min-width: 100%;
+                                        max-width: 155px;
+                                        height: 105px;
+                                        border-radius: 1.3em 1.3em 0 0;
+                                        display: flex;
+                                        object-fit: cover;
+                                        overflow: hidden;
+                                    }
+                                .accomodation_description{
+                                    height: 80px;
+                                    padding: 10px 20px 0;
+                                    font-size: 0.8em;
+                                    line-height: 1.5em;
+                                    text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: column;
+                                    overflow: hidden;
+                                }
                     .more{
                         padding: 20px;
-                        font-size: 0.8rem;
+                        font-size: 0.8em;
                         font-weight: 600;
-                        text-shadow: 1px 1px 1px rgb(215, 215, 215);
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
                     }
-                    .more:hover{
-                    text-shadow: 1px 1px 2px #6b6b6b;
+                        .more:hover{
+                            font-weight: 700;
+                            text-shadow: 0.1em 0.1em 0.1em #6b6b6b;
+                        }
+        /* <section class="branch" id="activities"> */
+        .branch{
+            padding:0 20px 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            .branch:hover{
+                border-radius: 0.2em;
+                box-shadow: 0 0.1em #f2f2f2, 0 -0.1em #f2f2f2;
+            }
+                .activities_title{
+                    padding: 15px 10px 10px 20px;
+                    font-size: 0.8em;
                     font-weight: 700;
+                    line-height: 2em;
+                    text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                }
+                .activities_section{
+                    padding: 10px 0 40px 0;
+                    display: grid;
+                    display: -ms-grid;
+                    grid-template-columns: repeat(4, 23.5%);
+                    -ms-grid-columns: 24% 1% 24% 2% 24% 1% 24%;
+                    grid-template-rows: repeat(2, 50%);
+                    -ms-grid-rows: 47.5% 5% 47.5%;
+                    gap: 1.2em 2%;
+                    grid-template-areas:
+                    "vieux_port pomegue calanques notre_dame"
+                    "vieux_port frioul calanques longchamp";
+                }
+                    .activities{
+                        border-radius: 1.3em;
+                        box-shadow: 0 0 0.4em 0.2em #f2f2f2;
+                        background-color: white;
+                        text-align:  left;
                     }
-                    @media screen and (min-width: 575px) { 
-                        aside{
-                            border-radius: 30px;
-                            margin: 0 20px;
-                            padding-right: 0;
-                            padding-left: 0;
+                        .activities:hover{
+                            box-shadow: 0 0 1em 0.2em rgb(215, 215, 215);
                         }
-                            .popular_title{
-                                padding:20px;
+                        .vieux_port{
+                            grid-area: vieux_port;
+                              -ms-grid-column: 1;
+                              -ms-grid-row: 1;
+                              -ms-grid-row-span: 3;
+                        } 
+                        .pomegues{
+                            grid-area: pomegue;
+                              -ms-grid-column: 3;
+                              -ms-grid-row: 1;
+                        }
+                        .frioul{
+                            grid-area: frioul;
+                              -ms-grid-column: 3;
+                              -ms-grid-row: 3;
+                        }
+                        .calanques{
+                            grid-area: calanques;
+                              -ms-grid-column: 5;
+                              -ms-grid-row: 1;
+                              -ms-grid-row-span: 3;
+                        }
+                        .notre_dame{
+                            grid-area: notre_dame;
+                              -ms-grid-column: 7;
+                              -ms-grid-row: 1;
+                        }
+                        .longchamp{
+                            grid-area: longchamp;
+                              -ms-grid-column: 7;
+                              -ms-grid-row: 3;
+                        }
+                            .activities_picture img{
+                                border-radius: 1.3em 1.3em 0 0;
+                                width: 100%;
+                                height: 155px;
+                                object-fit: cover;
                             }
-                            .popular_article{
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: center;
-                                min-height: 90%;
-                            }
-                                    .card{
-                                        height: 140px;
-                                        width: 440px;
-                                    }  
-                                    .popular_housing{          
-                                    padding: 20px;}
+                                .big img{
+                                    height: 390px;
+                                    width: 100%;
+                                    border-radius: 1.3em 1.3em 0 0;
+                                    object-fit: cover;
                                 }
-                    @media screen and (min-width: 760px) {
-                        article{
-                            background-color: #f2f2f2;
-                            box-shadow: 0 1px 5px rgb(215, 215, 215), 0 -1px 5px rgb(215, 215, 215);
+        /* <footer> */
+        footer{
+            padding:  30px 0 20px 60px;
+            box-shadow: 0 -0.1em 0.2em rgb(215, 215, 215);
+            background-color: #f2f2f2;
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+            footer:hover{
+                box-shadow: 0 -0.2em 0.3em rgb(215, 215, 215);
+            }
+                .footer_bar{
+                    padding: 0 50px 30px 0;
+                }
+                    footer h4{
+                        font-size: 1em;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        padding-bottom: 20px;
+                    }
+                        footer h4:hover{
+                            font-weight: 700;
+                            text-shadow: 0.1em 0.1em 0.1em #6b6b6b;
                         }
-                        article:hover{
-                            box-shadow: 0 2px 10px rgb(215, 215, 215), 0 -2px 10px rgb(215, 215, 215);  
+                    footer ul{
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        line-height: 2em;
+                    }
+                        footer li{
+                            list-style-type: none;
                         }
-                        .popular_housing{
-                            width: 340px;
-                            padding: 10px 12px;
+                            footer a{
+                                line-height: 0.8em;                            
+                                font-size: 0.8em;
+                                text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                                color: black;
+                                }
+                                    footer a:hover{
+                                        font-weight: 400;
+                                        text-shadow: 0.1em 0.1em 0.1em #6b6b6b;
+                                    }
+/* media */
+@media screen and (min-width: 575px) {
+            .searchbar{
+                justify-content: flex-start;
+                align-items: stretch;
+            }
+                    .fa-map{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 1em 0 0 1em;
+                    }
+                    .searchbar input{
+                        min-width: 380px;
+                        height: 50px;
+                        padding-right: 170px;
+                    }
+                        ::placeholder{
+                            padding-right: 40px;
+                            font-size: 1.1em;
+                            color: rgb(7, 7, 7);
+                            text-align: center;
                         }
-                        .serie{
-                            flex-wrap: nowrap;
-                            justify-content: space-between;
-                            padding: 10px 20px;
+                .push{
+                    min-width: 135px;
+                    min-height: 50px;
+                    margin-left: -136px;
+                    border-radius: 0px 1em 1em 0px;
+                    color: white;
+                    background-color: #0065FC;
+                }
+                    .fa-search{
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        display: none;
+                    }
+                    .click_search{
+                        font-weight: 600;
+                        text-shadow: 0.1em 0.1em 0.1em rgb(215, 215, 215);
+                        display: block;
+                    }
+                        .click_search:hover{
+                            font-weight: 300;
                         }
+            aside{
+                
+                border-radius: 2em;
+            }
+                .popular_article{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    min-height: 90%;
+                }
+                    .popular_housing{          
+                        padding: 20px;
+                    }
+                        .card{
+                            height: 140px;
+                            width: 440px;
+                        }  
+            footer{
+                padding-left: 100px;
+            }                   
+}
+@media screen and (min-width: 765px) {
+        header{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+            .topbar_logo{
+                width: 40%;
+                flex: 6;
+            }
+            .inscription{
+                width: 10%;
+                margin: 0;
+                flex: 1;
+                order: 3;
+            }
+            .topbar_menu{
+                flex: 3;
+            }
+                .topbar_selection
+                {
+                    padding: 33px 50px;                                          
+                    border-bottom: 0;
+                }
+                    .topbar_selection:hover{
+                        border-bottom: 0;
+                        border-top: 0.2em solid blue;
+                    }
+            /* aside */
+                    .popular_housing{
+                        width: 340px;
+                        padding: 10px 12px;
+                    }
+            article{
+                box-shadow: 0 0.1em 0.3em 0.2em rgb(215, 215, 215), 0 -0.1em 0.3em 0.2em rgb(215, 215, 215);
+                background-color: #f2f2f2;
+            }
+                article:hover{
+                    box-shadow: 0 0.1em 0.6em 0.2em rgb(215, 215, 215), 0 -0.1em 0.6em 0.2em rgb(215, 215, 215);  
+                }
+                    .serie{
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                    }
                         .accomodation{
                             min-width: 32%;
-                            box-shadow: 0 0 7px 1px rgb(215, 215, 215);
+                            box-shadow: 0 0 0.5em 0.2em rgb(215, 215, 215);
                         }
                         .accomodation_description{
                             padding: 5px 0px 5px 20px;
-                            font-size: 0.8rem;
                         }
-                        .more{
-                            padding: 30px 20px 40px 20px;
-                        }
+                    .more{
+                        padding: 30px 20px 40px 20px;
                     }
-@media screen and (min-width: 980px) {
-    .filter{display: flex;
-                flex-direction: row;
-    }
-    .main 
-    {
-        display: flex;
-        flex-flow: nowrap row-reverse;
-        justify-content: space-between;
-        margin: 20px;
-    }
-        aside{
-            width: 33%;
-            margin: 0;
-            padding: 10px;
+        footer{
+            display:flex;
+            flex-flow: row wrap;
         }
-            .popular_title{
-                padding: 15px 20px 30px 20px;
+            .footer_bar{
+                width: 33%;
             }
-            .popular_housing{
-                padding: 0 20px;
-                height: 140px;
-                width: 340px;
+}           
+@media screen and (min-width: 980px) {
+        main 
+        {
+            margin: 20px;
+            display: flex;
+            flex-flow: nowrap row-reverse;
+            justify-content: space-between;
+        }
+            aside{
+                width: 33%;
+                padding: 10px;
+                margin: 0;
             }
-            .card{
-                display: flex;
-                border-radius: 22px;
-                background-color: white;
-                max-height: 140px;
-            }
-                .popular_picture img{
-                    width: 125px;
-                    height: 135px;
+                .popular_title{
+                    padding: 15px 20px 30px 20px;
                 }
-                .popular_description{
-                    font-size: 0.8rem;
+                    .popular_housing{
+                        padding: 20px;
+                    }
+                        .card{
+                            max-height: 140px;
+                            background-color: white;
+                        }
+                                .popular_picture img{
+                                    width: 125px;
+                                    height: 135px;
+                                }
+                    .filter{
+                    flex-direction: row;
+                    }
+            article{
+                width: 65%;
+                margin: 0;
+                border-radius: 2em;
+            }                         
+                .serie{
+                    padding-top: 15px;
                 }
-        article{
-            width: 65%;
-            background-color: #f2f2f2;
-            margin: 0;
-            border-radius: 30px;
-        }                         
-    .serie{
-    flex-wrap: nowrap;
-    padding-top: 15px;
-    justify-content: space-between;
-}
-.accomodation{
-    min-width: 180px;
-    width: 33%;
-    margin: 10px;
-}
-.accomodation_description{
-    padding: 5px 0px 5px 20px;
-    font-size: 0.8rem;
-}
-.more{
-    padding: 30px 20px 40px 20px;
-}
-}
-.branch
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:0 20px 30px 20px;
-}
-.branch:hover{
-    box-shadow: 0 2px #f2f2f2, 0 -2px #f2f2f2;
-    border-radius: 0.2rem;
-}
-.activities_section
-{
-    display: grid;
-    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-    "vieux_port pomegue calanques notre_dame"
-    "vieux_port frioul calanques longchamp";
-    gap: 20px 2%;
-    padding: 10px 0;
-}
-.activities{
-    background-color: white;
-    border-radius: 22px;
-    text-align:  left;
-    box-shadow: 0 0 7px 1px #f2f2f2;
-}
-.activities:hover{
-    box-shadow: 0 0 15px 2px rgb(215, 215, 215);
-}
-.activities_picture img{
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 155px;
-}
-.big img{
-    object-fit: cover;
-    height: 390px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-}
-.activities_title{
-    padding: 15px 10px 10px 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    line-height: 2rem;
-    text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-}
-.vieux_port
-{
-
-    grid-area: vieux_port;
-} 
-.pomegues
-{
-   
-    grid-area: pomegue;
-}
-.frioul
-{
-    grid-area: frioul;
-}
-.calanques
-{
-    grid-area: calanques;
-}
-.notre_dame
-{
-    grid-area: notre_dame;
-}
-.longchamp
-{
-    grid-area: longchamp;
+                    .accomodation{
+                    min-width: 180px;
+                    width: 33%;
+                    margin: 10px;
+                    }
+                
 }
 @media screen and (max-width: 979px) {
-    .branch{
-        padding-bottom: 90px;
-    }
-    .activities_section
-{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 24.5% 24.5% 0.2% 24.5% 24.5%;
-    grid-template-areas:
-    "vieux_port pomegue"
-    "vieux_port frioul"
-    ". ."
-    "calanques notre_dame"
-    "calanques longchamp";
-    gap: 20px 2.5%;
-    margin: 0 16px 5px 0;
-    padding-top: 5px;
-}
-.activities_title{
-    padding: 15px 0 15px 20px;
-
-}
+        .branch{
+            padding-bottom: 90px;
+        }
+            .activities_title{
+                padding: 15px 0 15px 20px;
+            }
+            .activities_section{
+                padding-top: 5px;
+                padding-bottom: 20px;
+                margin: 0 16px 0 0;
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(2, 24.5%) 0.2% repeat(2, 24.5%);
+                gap: 1.2em 2.5%;
+                grid-template-areas:
+                "vieux_port pomegue"
+                "vieux_port frioul"
+                ". ."
+                "calanques notre_dame"
+                "calanques longchamp";
+            }
+            
 }
 @media screen and (max-width: 714px) {
-    .branch{
-        padding-bottom: 35px;
-    }
-    .activities_section
-    {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(2, 24.5%) 2% repeat(2, 24.5%);
-        grid-template-areas:
-        "vieux_port vieux_port"
-        "pomegue frioul"
-        ". ."
-        "calanques calanques"
-        "notre_dame longchamp";
-    }
-    .activities_picture img{
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-        height: 285px;
-    }
-    .big img {
-        object-fit: cover;
-        height: 290px;
-        width: 100%;
-}}
-@media screen and (max-width: 575px) {
-    .branch{
-        padding-bottom: 15px;
-    }
-    .activities_section
-    {
-   display: flex;
-   flex-direction: column;
-   margin: 0;
-   gap: 5px;
-    }
-    .activities{
-        margin: 10px 0;
-    }
-.big img {
-    height: 120px;
-}
-.activities_title{
-    padding: 12px 0 7px 20px ;
-}
-.activities_picture img{
-        height: 120px;
-    }
-}
-footer{
-    padding:  30px 20px 20px 100px;
-    line-height: 3rem;
-    background-color: #f2f2f2;
-    box-shadow: 0 -1px 2px rgb(215, 215, 215);
-
-}
-footer:hover{
-    box-shadow: 0 -3px 5px rgb(215, 215, 215);
-}
-    .footer_bar{
-        padding: 0 50px 30px 0;
-    }
-        footer ul{
-            padding: 0;
-            margin:0;
+        .branch{
+            padding-bottom: 35px;
         }
-        footer h3{
-            font-size: 1.2rem;
-            text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-        }
-        footer h3:hover{
-            font-weight: 700;
-            text-shadow: 1.5px 1.5px 2px #6b6b6b;
-        }
-            footer li{
-                list-style-type: none;
+            .activities_section{
+                padding-bottom: 90px;
+                display: grid;
+                grid-template-rows: repeat(2, 24.5%) 2% repeat(2, 24.5%);
+                grid-template-columns: repeat(2, 50%);
+                grid-template-areas:
+                "vieux_port vieux_port"
+                "pomegue frioul"
+                ". ."
+                "calanques calanques"
+                "notre_dame longchamp";
             }
-                footer a{
-                    color: black;
-                    line-height: 1.5rem;
-                    font-size: 0.85rem;
-                    text-shadow: 1.5px 1.5px 2px rgb(215, 215, 215);
-                }
-                footer a:hover{
-                    text-shadow: 1px 1px 2px #6b6b6b;
-                    font-weight: 400;
-                }
-                    @media screen and (min-width:650px) {
-                        footer{
-                            display:flex;
-                            flex-flow: row wrap;
+                        .big img {
+                            width: 100%;
+                            height: 290px;
+                            object-fit: cover;
                         }
-                        .footer_bar{
-                            width: 33%;
-                        }
+                            .activities_picture img{
+                                width: 100%;
+                                height: 285px;
+                                border-radius: 1.3em 1.3em 0 0;
+                                object-fit: cover;
+                            }                  
 }
-/* <body> */
-        /* <div class="container"> */
-            /* <header> */
-                /* <a class="topbar_logo" */
-                /* <a class="inscription" */
-                /* <div class="topbar_menu"> */
-                    /* <a class="topbar_selection"> */
-            /* <nav> */
-                /* <div class="description"> */
-                  
-                /* <form class="searchbar" */
-                    /* <span class="fa-map"> */
-                        /* <input id="fields"> */
-                    /* <button class="push"> */
-                        /* <span class="fa-search"> */
-                        /* <span class="click_search"> */
-                /* <div class="filter"> */
-                    /* <h4 class="title_list"> */
-                    /* <ul class="list_filter"> */
-                        
-                        /* <li> */
-                            /* <button class="item"> */
-                                /* <span class="choose"> */
-                                /* <span class="fa-item"> */
-                          
-                /* <div class="information"> */
-                    /* <button class="info-circle"> */
-                        /* <span class="logo_circle"> */
-                            
-                        /* <span class="info"> */
-                           
-            /* <section class="main"> */
-                /* <aside> */
-                    /* <h2 class="popular_title"> */
-                    /* <div class="popular_article">  */
-                        
-                           
-                        /* <div class="popular_housing"> */
-                            /* <a class="card"> */
-                                    /* <picture class= "popular_picture"> */
-                                        /* <img */
-                               
-                                    /* <div class="popular_description"> */
-                                        /* <div class="fa_description"> */
-                                            /* <div class="fa_icon"> */
-                                          
-                /* <article id="accomodation"> */
-                        /* <h2 class="accomodation_title"> */
-                        /* <div class="serie"> */
-                            
-                                                /* <div class="icon_filled"> */
-                                              
-                                                /* <div class="icon_empty"> */
-                                       
-                                /* <a class="accomodation" > */
-                                        /* <figure class= "accomodation_picture"> */
-                                            /* <img> */
-                                        /* <div class= "accomodation_description"> */
-                                            /* <div class="fa_icon"> */
-                                                
-                        /* <div class="more"> */
-                        
-            /* <section class="branch" id="activities"> */
-                /* <div class="activities_title"> */
-                    /* <h2> */
-                /* <div class="activities_section"> */
-                    /* <div class="activities vieux_port"> */
-                        /* <a> */
-                            /* <div class="big"> */
-                                /* <picture> */
-                                    /* <img> */
-                            /* <div class="activities_title"> */
-                                /* <h3> */
-                    /* <div class="activities pomegues"> */
-                    /* <a> */
-                        /* <div class="activities_picture"> */
-                            /* <picture> */
-                                /* <img> */
-                        /* <div class="activities_title"> */
-                            /* <h3> */
-                /* <div class="activities frioul"> */
-                    /* <a> */
-                        /* <div class="activities_picture"> */
-                            /* <picture> */
-                                /* <img> */
-                        /* <div class="activities_title"> */
-                            /* <h3> */
-                      
-                /* <div class="activities calanques"> */
-                    /* <a> */
-                        /* <div class="big"> */
-                            /* <picture class="big"> */
-                                /* <img> */
-                        /* <div class="activities_title"> */
-                            /* <h3> */
-                /* <div class="activities notre_dame"> */
-                    /* <a> */
-                        /* <div class="activities_picture"> */
-                            /* <picture> */
-                                /* <img> */
-                        /* <div class="activities_title"> */
-                            /* <h3> */
-                      
-                /* <div class="activities  longchamp"> */
-                    /* <a> */
-                        /* <div class="activities_picture"> */
-                            /* <picture> */
-                                /* <img> */
-                            
-                        /* <div class="activities_title"> */
-                            /* <h3> */
-                        
-            /* <footer> */
-                /* <div class="footer_bar condition"> */
-                 /* <h3> */
-                    /* <ul> */
-                   
-                /* <div class="footer_bar housing"> */
-                /* <h3> */
-                    /* <ul> */
-                    
-                /* <div class="footer_bar assistance"> */
-                /* <h3> */
-                    /* <ul> */
-            
+@media screen and (max-width: 575px) {
+        .branch{
+            padding-bottom: 15px;
+        }
+            .activities_section
+            {
+                padding-bottom: 30px;
+                margin: 0;
+                gap: 0.35em;
+                display: flex;
+                flex-direction: column;
+            }
+                .activities{
+                    margin: 10px 0;
+                }
+                .big img {
+                    height: 120px;
+                }
+                .activities_title{
+                    padding: 12px 0 7px 20px ;
+                }
+                .activities_picture img{
+                    height: 120px;
+                }
+}

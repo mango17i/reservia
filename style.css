@@ -51,7 +51,7 @@ body{
                 
                 .inscription:hover{
                     font-weight: 900;
-                    text-shadow: 2px 2px 20px rgba(242,242,242,0.2);
+                    text-shadow: 2px 2px 20px rgb(225,225,225);
                     color: #0065FC;
                 }
                 .inscription:active{
@@ -69,7 +69,7 @@ body{
             }
                 .topbar_selection{
                     width: 50%;
-                    text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                    text-shadow: 2px 2px 2px rgb(225,225,225);
                     border-bottom: 0.2em solid #f2f2f2;
                     text-align: center;
                 }
@@ -83,7 +83,7 @@ body{
                     }
                     .topbar_selection:hover{
                         font-weight: 500;
-                        text-shadow: 2px 2px 5px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 5px rgb(225,225,225);
                         border-bottom: #0065FC solid 0.1em;
                         color: #0065FC;
                         transition: color .3s;
@@ -106,7 +106,7 @@ body{
             .description{
                 padding: 10px 0 30px 0;
                 line-height: 2em;
-                text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                text-shadow: 2px 2px 2px rgb(225,225,225);
             }
             .searchbar{
                 width: auto;
@@ -119,7 +119,7 @@ body{
                     flex-wrap: nowrap;
                 }
                     .focus:hover{
-                        box-shadow: 2px 2px 20px rgba(242,242,242,0.2);
+                        box-shadow: 2px 2px 20px rgb(225,225,225);
                     }
                         .hidden {
                             height: 1px;
@@ -134,7 +134,7 @@ body{
                             height: 45px;
                             padding: 10px 15px 17px 17px;
                             font-size: 1.5em;
-                            text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                            text-shadow: 2px 2px 2px rgb(225,225,225);
                             border-radius: 1em 0 0 1em;
                             background-color: #f2f2f2;
                         }
@@ -157,7 +157,7 @@ body{
                                 font-size: 0.9em;
                                 font-weight: 600;
                                 opacity: 0.8;
-                                text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                                text-shadow: 2px 2px 2px rgb(225,225,225);
                                 color: black;
                                 text-align: left;
                             }
@@ -198,7 +198,7 @@ body{
             }
                 .title_list{
                     width: 5%;
-                    text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                    text-shadow: 2px 2px 2px rgb(225,225,225);
                     font-weight: 700;
                     padding-top: 21.5px;
                 }
@@ -226,7 +226,7 @@ body{
                         /* 444 hover */
                             .list_filter .item:hover{
                                 background-color:#f2f2f2;
-                                box-shadow: 0 0 10px 2px rgba(242,242,242,0.2);
+                                box-shadow: 0 0 10px 2px rgb(225,225,225);
                             }
                                 .list_filter .choose{
                                     min-height: 37px;
@@ -241,7 +241,7 @@ body{
                                 }
                                     .list_filter .choose:hover{
                                         background-color:#f2f2f2;
-                                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                                        text-shadow: 2px 2px 2px rgb(225,225,225);
                                         padding: 0 20px;
                                     } 
                                 .fa-item{
@@ -274,9 +274,9 @@ body{
                         height: 15px;
                         padding: 8px;
                         font-size: 0.7em;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 2px rgb(225,225,225);
                         border-radius: 50%;
-                        border: 0.1em solid rgba(242,242,242,0.2);
+                        border: 0.1em solid rgb(225,225,225);
                         color: blue;
                         background-color: white;
                         display: flex;
@@ -286,7 +286,7 @@ body{
                         .circle:hover{
                             font-weight: 500;
                             opacity: 1;
-                            text-shadow: 2px 2px 5px rgba(242,242,242,0.2);
+                            text-shadow: 2px 2px 5px rgb(225,225,225);
                         }
                     .info{
                         padding-top: 3px;
@@ -294,21 +294,21 @@ body{
                         font-size: 0.9em;
                         font-weight: 300;
                         opacity: 0.6;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 2px rgb(225,225,225);
                         display: flex;
                     }
         /* <section class="main"> */
             /* aside */
             aside{
-                box-shadow: 0 2px 5px 2px rgba(242,242,242,0.2), 0 -2px 5px 2px rgba(242,242,242,0.2);
+                box-shadow: 0 2px 5px 2px rgb(225,225,225), 0 -2px 5px 2px rgb(225,225,225);
                 background-color:#f2f2f2;
             }
                 aside:hover{
-                    box-shadow: 0 2px 8px 5px rgba(242,242,242,0.2), 0 -2px 8px 5px rgba(242,242,242,0.2);  
+                    box-shadow: 0 2px 8px 5px rgb(225,225,225), 0 -2px 8px 5px rgb(225,225,225);  
                 }             
                     .popular_title{
                         padding: 20px;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 2px rgb(225,225,225);
                         display: flex;
                         justify-content: space-between;
                     }
@@ -324,13 +324,13 @@ body{
                                 height: 130px;
                                 max-height: 290px;
                                 padding: 3px;
-                                box-shadow: 0 0 10px 2px rgba(242,242,242,0.2);
-                                border-radius: 1.5em;
+                                box-shadow: 0 0 10px 2px rgb(225,225,225);
+                                border-radius: 20px;
                                 display: flex;
                                 background-color: white;
                             }
                                 .card:hover{
-                                    box-shadow: 0 0 2px 2px  rgba(242,242,242,0.2);
+                                    box-shadow: 0 0 2px 2px  rgb(225,225,225);
                                 }                    
                                     .popular_picture{
                                         min-width: 37%;
@@ -351,7 +351,7 @@ body{
                                         padding: 10px 0 10px 20px;
                                         font-size: 0.8em;
                                         line-height: 1.8em;
-                                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                                        text-shadow: 2px 2px 2px rgb(225,225,225);
                                         display: flex;
                                         flex-direction: column;
                                         justify-content: space-between;
@@ -379,12 +379,12 @@ body{
                 flex-direction: column;
             }
                 article:hover{
-                    box-shadow: 0 2px 20px  rgba(242,242,242,0.2), 0 -2px 20px rgba(242,242,242,0.2);
+                    box-shadow: 0 2px 20px  rgb(225,225,225), 0 -2px 20px rgb(225,225,225);
                     background-color: #f2f2f2;
                 }
                     .accomodation_title{
                         padding: 20px;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 2px rgb(225,225,225);
                     }
                     .serie{
                         padding: 20px;
@@ -405,7 +405,7 @@ body{
                             flex-wrap: wrap;
                         }
                             .accomodation:hover{
-                                box-shadow: 0 0 20px 2px rgba(242,242,242,0.2);
+                                box-shadow: 0 0 20px 2px rgb(225,225,225);
                                 }
                                     .accomodation_picture img{
                                         min-width: 100%;
@@ -421,7 +421,7 @@ body{
                                     padding: 10px 20px 0;
                                     font-size: 0.8em;
                                     line-height: 1.5em;
-                                    text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                                    text-shadow: 2px 2px 2px rgb(225,225,225);
                                     display: flex;
                                     justify-content: space-between;
                                     flex-direction: column;
@@ -431,7 +431,7 @@ body{
                         padding: 20px;
                         font-size: 0.8em;
                         font-weight: 600;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 2px 2px 2px rgb(225,225,225);
                     }
                         .more:hover{
                             font-weight: 700;
@@ -453,7 +453,7 @@ body{
                     font-size: 0.8em;
                     font-weight: 700;
                     line-height: 2em;
-                    text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                    text-shadow: 2px 2px 2px rgb(225,225,225);
                 }
                 /* 1010 grid be careful ie */
                 .activities_section{
@@ -476,7 +476,7 @@ body{
                         text-align:  left;
                     }
                         .activities:hover{
-                            box-shadow: 0 0 20px 2px  rgba(242,242,242,0.2);
+                            box-shadow: 0 0 20px 2px  rgb(225,225,225);
                         }
                         .vieux_port{
                             grid-area: vieux_port;
@@ -525,26 +525,26 @@ body{
         /* <footer> */
         footer{
             padding:  30px 0 20px 60px;
-            box-shadow: 0 -2px 2px rgba(242,242,242,0.2);
+            box-shadow: 0 -2px 2px rgb(225,225,225);
             background-color: #f2f2f2;
             display: flex;
             flex-wrap: wrap;
         
         }
             footer:hover{
-                box-shadow: 0 -2px 5px rgba(242,242,242,0.2);
+                box-shadow: 0 -2px 5px rgb(225,225,225);
             }
                 .footer_bar{
                     padding: 0 50px 30px 0;
                 }
                     footer h4{
                         font-size: 1em;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 1px 1px 1px rgb(225,225,225);
                         padding-bottom: 20px;
                     }
                         footer h4:hover{
                             font-weight: 700;
-                            text-shadow: 2px 2px 2px #6b6b6b;
+                            text-shadow: 1px 1px 1px #6b6b6b;
                         }
                     footer ul{
                         padding: 0;
@@ -559,12 +559,12 @@ body{
                             footer a{
                                 line-height: 0.8em;                            
                                 font-size: 0.8em;
-                                text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                                text-shadow: 1px 1px 1px rgb(225,225,225);
                                 color: black;
                                 }
                                     footer a:hover{
                                         font-weight: 400;
-                                        text-shadow: 2px 2px 2px #6b6b6b;
+                                        text-shadow: 1px 1px 1px #6b6b6b;
                                     }
 /* 666 responsive  */
 /* media */
@@ -598,12 +598,12 @@ body{
                     background-color: #0065FC;
                 }
                     .fa-search{
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 1px 1px 1px rgb(225,225,225);
                         display: none;
                     }
                     .click_search{
                         font-weight: 600;
-                        text-shadow: 2px 2px 2px rgba(242,242,242,0.2);
+                        text-shadow: 1px 1px 1px rgb(225,225,225);
                         display: block;
                     }
                         .click_search:hover{
@@ -664,11 +664,11 @@ body{
                         padding: 10px 12px;
                     }
             article{
-                box-shadow: 0 2px 5px 2px rgba(242,242,242,0.2), 0 -2px 5px 2px rgba(242,242,242,0.2);
+                box-shadow: 0 2px 5px 2px rgb(225,225,225), 0 -2px 5px 2px rgb(225,225,225);
                 background-color: #f2f2f2;
             }
                 article:hover{
-                    box-shadow: 0 2px 10px 2px rgba(242,242,242,0.2), 0 -2px 10px 2px rgba(242,242,242,0.2);  
+                    box-shadow: 0 2px 10px 2px rgb(225,225,225), 0 -2px 10px 2px rgb(225,225,225);  
                 }
                     .serie{
                         flex-wrap: nowrap;
@@ -677,7 +677,7 @@ body{
                     }
                         .accomodation{
                             min-width: 32%;
-                            box-shadow: 2px 10px 2px rgba(242,242,242,0.5);
+                            box-shadow: 2px 10px 2px rgb(225,225,225)0.5);
                         }
                         .accomodation_description{
                             padding: 5px 0px 5px 20px;

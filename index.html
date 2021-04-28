@@ -3,123 +3,114 @@
 
 <head>
     <link href="logo/Reservia@3x.png" rel="shortcut icon" type="text/css">
-    <!-- 777 fontawesome  -->
     <script src="https://kit.fontawesome.com/0da4233e0b.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- 888 fonts  -->
     <link type="text/css"
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <meta charset="utf-8">
-    <!-- 666 responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
 </head>
 
 <body>
     <div class="container">
-        <header ><!-- role="banner" --> 
-            <a class="topbar_logo" href="#"><img src="logo/Reservia.svg" alt="logo of the site Reservia" /></a><!-- role="img" -->
-            <a class="inscription" aria-label="Inscription" href="logo/Reservia.svg">S'inscrire</a>
-            <div role="group" class="topbar_menu">
-                <!-- 555 anchor to destination  -->
-                <a class="topbar_selection"  aria-label="Accomodation" href="#accomodation">Hébergement</a>
-                <a class="topbar_selection" aria-label="Activities" href="#activities">Activités</a>
+        <header class="topbar"> 
+            <a class="topbar__logo" href="#"><img src="logo/Reservia.svg" alt="logo of the site Reservia" /></a><!-- role="img" -->
+            <a class="topbar__inscription" aria-label="Inscription" href="logo/Reservia.svg">S'inscrire</a>
+            <div class="topbar__menu" role="group">
+                <a class="topbar__menu__anchor"  aria-label="Accomodation"href="#accomodation">Hébergement</a>
+                <a class="topbar__menu__anchor" aria-label="Activities" href="#activities">Activités</a>
             </div>
         </header>
-        <nav><!-- role="navigation" -->
-            <div role="group" class="description">
+        <nav class="search">
+            <div class="search__description" role="group">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <form class="searchbar" role="search" method="POST" action="traitement.php">
-                <!--111 Find your city destination -->
-                <div class="focus" role="group">
-                    <label class="hidden" for="city">find your city</label>
-                    <span class="fa-map"> <strong aria-hidden="true" class="fas fa-map-marker-alt"></strong ></span>
+            <form class="search__searchbar" role="search" method="POST" action="traitement.php">
+                <div class="search__searchbar__fields" role="group">
+                    <label class="search__searchbar__fields__title" for="city">find your city</label>
+                    <span class="search__searchbar__fields__map-icon"> <strong aria-hidden="true" class="fas fa-map-marker-alt"></strong ></span>
                     <input id="city" type="text" name="city" maxlength="30" placeholder="Marseille, France"/>
-                    <div class="invalid-feedback">
+                    <div class="search__searchbar__fields__invalid-feedback">
                         Veuillez renseigner une ville existante !
                     </div>
                     </div>
-                <button aria-label="research button" class="push" value="search" >
-                    <span class="fa-search"><strong aria-hidden="true" class="fas fa-search"></strong ></span>
-                    <span class="click_search">Rechercher</span>
+                <button class="search__searchbar__btn" aria-label="research button" value="search" >
+                    <span class="search__searchbar__btn__search-icon"><strong aria-hidden="true" class="fas fa-search"></strong ></span>
+                    <span class="search__searchbar__btn__text">Rechercher</span>
                 </button>
             </form>
-            <!-- 222 thematic -->
-            <div class="filter" role="group">
-                <label class="title_list">Filtres</label>
-                <ul class="list_filter">
+            <div class="search__filter" role="group">
+                <label class="search__filter__title">Filtres</label>
+                <ul class="search__filter__list">
                     <li>
-                        <button aria-label="economic filter" class="item">
-                            <span class="choose">
+                        <button class="search__filter__list__item" aria-label="economic filter">
+                            <span class="search__filter__list__item__choice">
                                 Économique
                             </span>
-                            <span class="fa-item">
+                            <span class="search__filter__list__item__filter-item">
                                 <strong aria-hidden="true" class="fas fa-money-bill-wave"></strong >
                             </span>
                         </button>
                     </li>
                     <li>
-                        <button aria-label="family filter" class="item">
-                            <span class="choose">Familial</span>
-                            <span class="fa-item">
+                        <button class="search__filter__list__item" aria-label="family filter">
+                            <span class="search__filter__list__item__choice">Familial</span>
+                            <span class="search__filter__list__item__filter-item">
                                 <strong aria-hidden="true" class="fas fa-child"></strong >
                             </span>
                         </button>
                     </li>
                     <li>
-                        <!-- 1313 aria-label  -->
-                        <button aria-label="romantic filter" class="item">
-                            <span class="choose">Romantique</span>
-                            <span class="fa-item">
-                                <!-- 3131 aria hidden -->
+                        <button class="search__filter__list__item" aria-label="romantic filter">
+                            <span class="search__filter__list__item__choice">Romantique</span>
+                            <span class="search__filter__list__item__filter-item">
                                 <strong aria-hidden="true" class="fas fa-heart"></strong >
                             </span>
                         </button>
                     </li>
                     <li>
-                        <button aria-label="pets filter" class="item">
-                            <span class="choose">Animaux autorisés</span>
-                            <span class="fa-item">
+                        <button class="search__filter__list__item" aria-label="pets filter">
+                            <span class="search__filter__list__item__choice">Animaux autorisés</span>
+                            <span class="search__filter__list__item__filter-item">
                                 <strong aria-hidden="true" class="fas fa-dog"></strong >
                             </span>
                         </button>
                     </li>
                 </ul>
             </div>
-            <div role="group" class="information">
-                <button aria-label="more info" class="info-circle">
-                    <span class="logo_circle circle">
+            <div class="search__information" role="group">
+                <button class="search__information__btn" aria-label="more info">
+                    <span class="search__information__btn__item circle">
                         <strong aria-hidden="true" class="fas fa-info"></strong >
                     </span>
-                    <span class="info circle">
+                    <span class="search__information__btn__text circle">
                         Plus de 500 logements sont disponibles dans cette ville
                     </span>
                 </button>
             </div>
         </nav>
-        <main > <!-- role="main" -->
-            <aside ><!-- role="complementary" -->
-                <h2 class="popular_title">Les plus populaires<strong aria-hidden="true" class="fas fa-chart-line"></strong ></h2>
-                <div class="popular_article">
-                    <!-- 333 article -->
-                    <div role="group" class="popular_housing">
-                        <a class="card" aria-label="hotel room in 'Le Soleil du matin'" href="#"><!--hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg-->
-                            <div class="popular_picture">
+        <main >
+            <aside class="popular">
+                <h2 class="popular__title">Les plus populaires<strong aria-hidden="true" class="fas fa-chart-line"></strong ></h2>
+                <div class="popular__article">
+                    <div class="popular__article__housing" role="group">
+                        <a class="popular__article__housing__card" aria-label="hotel room in 'Le Soleil du matin'" href="#"><!--hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg-->
+                            <div class="popular__article__housing__card__picture">
                                 <img src="hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                     alt="Photo of a hotel room in 'Le Soleil du matin' with double bed for couples --- Overnight from 128 euros --- Opinion: 5 stars"
                                     aria-describedby="first_hotel"><!-- role="img" -->
                             </div>
-                            <div id="first_hotel" class="popular_description">
-                                <div class="fa_description">
+                            <div id="first_hotel" class="popular__article__housing__card__description">
+                                <div class="popular__article__housing__card__description__information">
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de <em>128€</em></p>
                                 </div>
-                                <div class="fa_icon">
-                                    <div class="icon_filled">
+                                <div class="note">
+                                    <div class="icon-filled">
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
@@ -130,52 +121,52 @@
                             </div>
                         </a>
                     </div>
-                    <div role="group" class="popular_housing">
-                        <a class="card" aria-label="duplex in guests rooms 'Au coeur de l'eau'" href="#"><!-- hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg -->
-                            <picture class="popular_picture">
+                    <div class="popular__article__housing" role="group">
+                        <a class="popular__article__housing__card" aria-label="duplex in guests rooms 'Au coeur de l'eau'" href="#"><!-- hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg -->
+                            <picture class="popular__article__housing__card__picture">
                                 <img src="hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                     alt="Photo of duplex in guests rooms 'Au coeur de l'eau' with double bed for couples --- Overnight from 73 euros --- Opinion: 4 stars"
-                                    aria-describedby="guest_room"><!-- role="img" -->
+                                    aria-describedby="guest_room">
                             </picture>
-                            <div id="guest_room" class="popular_description">
-                                <div class="fa_description">
+                            <div class="popular__article__housing__card__description">
+                                <div class="popular__article__housing__card__description__information">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                     <p>Nuit à partir de <em>73€</em></p>
                                 </div>
-                                <div class="fa_icon">
-                                    <div class="icon_filled">
+                                <div class="note">
+                                    <div class="icon-filled">
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                     </div>
-                                    <div class="icon_empty">
+                                    <div class="icon-empty">
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div role="group" class="popular_housing">
-                        <a class="card" aria-label="hotel room in 'Tout bleu et Blanc'" href="#"><!-- hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg -->
-                            <picture class="popular_picture">
+                    <div role="group" class="popular__article__housing">
+                        <a class="popular__article__housing__card" aria-label="hotel room in 'Tout bleu et Blanc'" href="#"><!-- hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg -->
+                            <picture class="popular__article__housing__card__picture">
                                 <img src="hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                     alt="Photo of a hotel room in 'Tout bleu et Blanc' with double bed for couples --- Overnight from 68 euros --- Opinion: 4 stars"
-                                    aria-describedby="second_hotel"><!-- role="img" -->
+                                    aria-describedby="second_hotel">
                             </picture>
-                            <div id="second_hotel" class="popular_description">
-                                <div class="fa_description">
+                            <div id="second_hotel" class="popular__article__housing__card__description">
+                                <div class="popular__article__housing__card__description__information">
                                     <h3>Hôtel Tout bleu et Blanc</h3>
                                     <p>Nuit à partir de <em>68€</em></p>
                                 </div>
-                                <div class="fa_icon">
-                                    <div class="icon_filled">
+                                <div class="note">
+                                    <div class="icon-filled">
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                     </div>
-                                    <div class="icon_empty">
+                                    <div class="icon-empty">
                                         <strong aria-hidden="true" class="fas fa-star"></strong >
                                     </div>
                                 </div>
@@ -184,43 +175,42 @@
                     </div>
                 </div>
             </aside>
-            <!-- 555 anchor end  -->
-            <article id="accomodation" >
-                <h2 class="accomodation_title">Hébergements à Marseille</h2>
-                <div class="serie">
-                    <a class="accomodation" aria-label="hostel room in inn 'La Canebière'" href="#"><!-- hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg -->
-                        <picture class="accomodation_picture">
+            <article class="accomodation">
+                <h2 class="accomodation__title">Hébergements à Marseille</h2>
+                <div class="accomodation__serie">
+                    <a class="accomodation__serie__article" aria-label="hostel room in inn 'La Canebière'" href="#"><!-- hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg -->
+                        <picture class="accomodation__serie__article__picture">
                             <img src="hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Photo of a hostel room in inn 'La Canebière' with a set of two superimposed beds --- Overnight from 25 euros --- Opinion: 4 stars --- District 1"
                                 aria-describedby="first_inn"/><!-- role="img" -->
                         </picture>
-                        <div id="first_inn" class="accomodation_description">
+                        <div id="first_inn" class="accomodation__serie__article__description">
                             <h3>Auberge la Canebière</h3>
                             <p>Nuit à partir de <em>25€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
-                                <div class="icon_empty">
+                                <div class="icon-empty">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a class="accomodation" aria-label="hotel room of hotel port" href="#"><!-- hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg -->
-                        <picture class="accomodation_picture">
+                    <a class="accomodation__serie__article" aria-label="hotel room of hotel port" href="#"><!-- hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg -->
+                        <picture class="accomodation__serie__article__picture">
                             <img src="hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Photo of a hotel room of hotel port with two simple bed --- Overnight from 52 euros --- Opinion: 5 stars --- District 1"
                                 aria-describedby="third_hotel"/><!-- role="img" -->
                         </picture>
-                        <div id="third_hotel" class="accomodation_description">
+                        <div id="third_hotel" class="accomodation__serie__article__description">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de <em>52€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
@@ -230,85 +220,85 @@
                             </div>
                         </div>
                     </a>
-                    <a class="accomodation" aria-label="hotel room in 'Les mouettes'" href="#"><!-- hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg -->
-                        <picture class="accomodation_picture">
+                    <a class="accomodation__serie__article" aria-label="hotel room in 'Les mouettes'" href="#"><!-- hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg -->
+                        <picture class="accomodation__serie__article__picture">
                             <img src="hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Photo of a hotel room in 'Les mouettes' with one simple bed --- Overnight from 76 euros --- Opinion: 4 stars"
-                                aria-describedby="fourth_hotel"/><!-- role="img" -->
+                                aria-describedby="fourth_hotel"/>
                         </picture>
-                        <div id="fourth_hotel" class="accomodation_description">
+                        <div id="fourth_hotel" class="accomodation__serie__article__description">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de <em>76€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
-                                <div class="icon_empty">
+                                <div class="icon-empty">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="serie">
-                    <a class="accomodation" aria-label="hotel room in 'hotel of the sea'" href="#"><!-- hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg -->
-                        <figure class="accomodation_picture">
+                <div class="accomodation__serie">
+                    <a class="accomodation__serie__article" aria-label="hotel room in 'hotel of the sea'" href="#"><!-- hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg -->
+                        <figure class="accomodation__serie__article__picture">
                             <img src="hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Photo of a hotel room in 'hotel of the sea' with double bed for couples --- Overnight from 46 euros --- Opinion: 3 stars --- District 8"
-                                aria-describedby="fifth_hotel"/><!-- role="img" -->
+                                aria-describedby="fifth_hotel"/>
                         </figure>
-                        <div id="fifth_hotel" class="accomodation_description">
+                        <div id="fifth_hotel" class="accomodation__serie__article__description">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de <em>46€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
-                                <div class="icon_empty">
+                                <div class="icon-empty">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a class="accomodation" aria-label="inn room in 'Inn Le Panier'" href="#"><!-- hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg -->
-                        <figure class="accomodation_picture">
+                    <a class="accomodation__serie__article" aria-label="inn room in 'Inn Le Panier'" href="#"><!-- hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg -->
+                        <figure class="accomodation__serie__article__picture">
                             <img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Photo of a inn room in 'Inn Le Panier' with two set of two superimposed beds (total four beds) --- Overnight from 23 euros --- Opinion: 4 stars --- District 2"
-                                aria-describedby="second_inn"/><!-- role="img" -->
+                                aria-describedby="second_inn"/>
                         </figure>
-                        <div id="second_inn" class="accomodation_description">
+                        <div id="second_inn" class="accomodation__serie__article__description">
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de <em>23€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
-                                <div class="icon_empty">
+                                <div class="icon-empty">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a class="accomodation" aria-label="hotel room in 'Chez Amina'" href="#"><!-- hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg -->
-                        <figure class="accomodation_picture">
+                    <a class="accomodation__serie__article" aria-label="hotel room in 'Chez Amina'" href="#"><!-- hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg -->
+                        <figure class="accomodation__serie__article__picture">
                             <img src="hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Photo of a hotel room in 'Chez Amina' with two simple bed --- Overnight from 96 euros --- Opinion: 5 stars"
-                                aria-describedby="sixth_hotel"/><!-- role="img" -->
+                                aria-describedby="sixth_hotel"/>
                         </figure>
-                        <div id="sixth_hotel" class="accomodation_description">
+                        <div id="sixth_hotel" class="accomodation__serie__article__description">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de <em>96€</em></p>
-                            <div class="fa_icon">
-                                <div class="icon_filled">
+                            <div class="note">
+                                <div class="icon-filled">
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
                                     <strong aria-hidden="true" class="fas fa-star"></strong >
@@ -319,90 +309,90 @@
                         </div>
                     </a>
                 </div>
-                <div class="more">
+                <div class="accomodation__more">
                     <p>Afficher plus</p>
                 </div>
             </article>
         </main>
-        <section class="branch" id="activities">
-            <div class="activities_title">
+        <section class="activities" id="activities">
+            <div class="activities__title">
                 <h2>Activités à Marseille</h2>
             </div>
-            <div class="activities_section">
-                <div role="group" class="activities vieux_port">
+            <div class="activities__section">
+                <div role="group" class="activities__section__article vieux_port">
                     <a aria-label="Le Vieux-port" href="#"><!-- activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg -->
-                        <div class="big">
+                        <div class="activities__section__article__picture big">
                             <picture>
                                 <img src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    alt="Historic site: 'Vieux-port of Marseille' --- District 1"><!-- role="img" -->
+                                    alt="Historic site: 'Vieux-port of Marseille' --- District 1">
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Vieux port</h3>
                         </div>
                     </a>
                 </div>
-                <div role="group" class="activities pomegues">
+                <div role="group" class="activities__section__article pomegues">
                     <a aria-label="Fort de Pomègues" href="#"><!-- activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg -->
-                        <div class="activities_picture">
+                        <div class="activities__section__article__picture">
                             <picture>
                                 <img src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                     alt="Historic site: 'Fort de Pomègues' --- District 7"><!-- role="img" -->
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Fort de Pomègues</h3>
                         </div>
                     </a>
                 </div>
-                <div role="group" class="activities frioul">
+                <div role="group" class="activities__section__article frioul">
                     <a aria-label="Îles du Frioul" href="#"><!-- activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg -->
-                        <div class="activities_picture">
+                        <div class="activities__section__article__picture">
                             <picture>
                                 <img src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                    alt="Historic site: 'Îles du Frioul' --- District 7"><!-- role="img" -->
+                                    alt="Historic site: 'Îles du Frioul' --- District 7">
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Îles du Frioul</h3>
                         </div>
                     </a>
                 </div>
-                <div role="group" class="activities calanques">
+                <div role="group" class="activities__section__article calanques">
                     <a aria-label="Parc national des Calanques" href="#"><!-- activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg -->
-                        <div class="big">
-                            <picture class="big">
+                        <div class="activities__section__article__picture big">
+                            <picture>
                                 <img src="activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                                     alt="Historic site: 'National park of Calanques' --- District 9"><!-- role="img" -->
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Parc National des Calanques</h3>
                         </div>
                     </a>
                 </div>
-                <div role="group" class="activities notre_dame">
+                <div role="group" class="activities__section__article notre_dame">
                     <a aria-label="Nôtre-Dame de la Garde" href="#"><!-- activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg -->
-                        <div class="activities_picture">
+                        <div class="activities__section__article__picture">
                             <picture>
                                 <img src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    alt="Historic site: 'Nôtre-Dame-de-la-Garde' --- District 6"><!-- role="img" -->
+                                    alt="Historic site: 'Nôtre-Dame-de-la-Garde' --- District 6">
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </div>
                     </a>
                 </div>
-                <div role="group" class="activities  longchamp">
+                <div role="group" class="activities__section__article  longchamp">
                     <a aria-label="Palais Longchamp" href="#"><!-- activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg -->
-                        <div class="activities_picture">
+                        <div class="activities__section__article__picture">
                             <picture>
                                 <img src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                    alt="Historic site: 'Longchamp palace' --- District 4"><!-- role="img" -->
+                                    alt="Historic site: 'Longchamp palace' --- District 4">
                             </picture>
                         </div>
-                        <div class="activities_title">
+                        <div class="activities__section__article__description">
                             <h3>Longchamp</h3>
                         </div>
                     </a>
@@ -410,8 +400,7 @@
             </div>
         </section>
         <footer>
-            <!-- role="contentinfo" -->
-            <div class="footer_bar condition">
+            <div class="footer__bar condition">
                 <h4>A propos</h4>
                 <ul>
                     <li><a href="#operation">Fonctionnement du site</a></li>
@@ -419,14 +408,14 @@
                     <li><a href="#security">Données et confidentialité</a></li>
                 </ul>
             </div>
-            <div class="footer_bar housing">
+            <div class="footer__bar housing">
                 <h4>Nos hébergements</h4>
                 <ul>
                     <li><a href="#quality">Charte qualité</a></li>
                     <li><a href="#choice">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
-            <div class="footer_bar assistance">
+            <div class="footer__bar assistance">
                 <h4>Assistance</h4>
                 <ul>
                     <li><a href="#help">Centre d'aide</a></li>
